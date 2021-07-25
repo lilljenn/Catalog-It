@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Page Title</title>
+	<title>Catalog It</title>
 </head>
 <body>
 <h1>MARC Code</h1>
@@ -15,7 +15,7 @@
   <option>007 Physical Description Fixed Field</option>
   <option>008 Fixed-Length Data Elements</option>
   </optgroup>
-  <optgroup label = "01X-09X" Numbers and Code Fields">
+  <optgroup label = "01X-09X: Numbers and Code Fields">
   <option>010 Library of Congress Control Number</option>
   <option>013 Patent Control Information</option>
   <option>
