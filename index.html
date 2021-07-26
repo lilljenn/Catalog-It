@@ -1,9 +1,17 @@
 <!DOCTYPE html>
 <html>
+	<script>
+		addCode(){
+			if (document.getElementById == "001"){
+				$(#nextForm").append("<p>Please enter the Library of Congress Control Number.</p><br/><input type = "text"></input><input type = "submit" value = "submit" onClick = ""</input><")
+			}
+		}
+	</script>
 <head>
 	<title>Catalog It</title>
 </head>
 <body>
+	<div>
 <h1>MARC Code</h1>
 <p>Please select the MARC code for your bibliographic record.</p>
 <form action="/action_page.php" name="codeForm"><select name="code">
@@ -279,8 +287,9 @@
 		<option id = "887">887 Non-MARC Information Field</option> 
 
 	</optgroup>
-</select><br /> <br /> <input type="submit" value="submit" /></form>
-
+</select><br /> <br /> <input type="submit" value="submit" onClick = "addCode()"/></form>
+</div>
+<div id = "nextForm></div>
 
 </body>
 </html>
