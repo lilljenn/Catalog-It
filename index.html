@@ -11,6 +11,7 @@
 			{
 				   var addedTextBox = document.createElement("INPUT");
   					addedTextBox.setAttribute("type", "text");
+					document.body.appendChild(addedTextBox);
 			}
 			}
 		}
@@ -296,7 +297,7 @@
 		<option id = "887">887 Non-MARC Information Field</option> 
 
 	</optgroup>
-</select><br /> <br /> <input type="submit" value="submit" onClick = "addCode()"/></form>
+</select><br /> <br /> <input id = "codeSubmit" type="submit" value="submit" onClick = "addCode()"/></form>
 </div>
 <div id = "nextForm></div>
 
