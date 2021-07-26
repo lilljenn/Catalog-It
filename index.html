@@ -7,14 +7,13 @@
 			//}
 			function addTextBox(val){
 			var element = document.getElementById('code')	
-			if (val == "001")
-			{
-				   var addedTextBox = document.createElement("INPUT");
-  					addedTextBox.setAttribute("type", "text");
-					document.body.appendChild(addedTextBox);
+			 if(val=='pick a color'||val=='others')
+   element.style.display='block';
+ else  
+   element.style.display='none';
+
 			}
-			}
-		}
+		
 	</script>
 <head>
 	<title>Catalog It</title>
