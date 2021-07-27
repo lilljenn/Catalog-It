@@ -3,6 +3,11 @@
 <head>
 	<title>Catalog It</title>
 </head>
+	<script src = "text/javascript">
+	function addTextBox(){
+		document.getElementById("paragraph").innerHTML = "paragraph changed."
+	}
+	</script>
 <body>
 	<div>
 <h1>MARC Code</h1>
@@ -281,7 +286,7 @@
 		<option id = "887">887 Non-MARC Information Field</option> 
 
 	</optgroup>
-</select><br /> <br /> <input id = "codeSubmit" type="submit" value="submit" ></input></form>
+</select><br /> <br /> <input id = "codeSubmit" type="submit" value="submit" onClick = "addTextBox()"></input></form>
 </div>
 <div >
 <p id = "paragraph">
