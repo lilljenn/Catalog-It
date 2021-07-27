@@ -5,7 +5,7 @@
 			//if (document.getElementById == "001"){
 				//$(#"nextForm").append("<p>Please enter the Library of Congress Control Number.</p><br/><input type = "text"></input><input type = "submit" value = "submit" onClick = ""</input><")
 			//}
-			function addTextBox(val){
+			function addTextBox(){
 				var outputCode = document.getElementById("code").value;
 				
 				  document.getElementById("addedTextBox").innerHTML = "You selected: " + outputCode;
@@ -302,7 +302,7 @@
 		<option id = "887">887 Non-MARC Information Field</option> 
 
 	</optgroup>
-</select><br /> <br /> <input id = "codeSubmit" type="submit" value="submit" onClick = "addTextBox()"/>//</form>
+</select><br /> <br /> <input id = "codeSubmit" type="submit" value="submit" onClick = "addTextBox()"></input>//</form>
 </div>
 <div id = "nextForm>
 		<input type="text" name="code" id="addedTextBox" style='display:none;'/></div>
