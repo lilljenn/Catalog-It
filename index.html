@@ -317,7 +317,10 @@
 		<option id = "887">887 Non-MARC Information Field</option> 
 
 	</optgroup>
-</select><br /> <br /> <input id = "codeSubmit" type="button" value="Enter" onClick = "return addTextBox()"></input></form>
+</select><br /> <br /> 
+				  
+													   <button ... onclick="return addTextBox();this.disabled=true;this.value='Submitting...'; this.form.submit();" id = "codeSubmit">Enter
+													   </button>
 </div>
 <div >
 <p id = "paragraph">
