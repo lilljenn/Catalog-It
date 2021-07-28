@@ -2,9 +2,11 @@
 <html>
 <head>
 	<style>
-		.inline{
-		display: inline-block;
-		}
+		.right{
+		padding-left: 55%;
+      
+		} 
+        .left{padding-right: 50%;}
 	</style>
 	<title>Catalog It</title>
 </head>
@@ -38,8 +40,29 @@
    undo.onclick = function(){
     location.reload();
     return false;
+    
+   
   };
   
+   button.onclick = function(){
+    document.getElementById("output").innerHTML = code + " _ _ " + textBox.value;
+ this.disabled=true; this.value='Sending…';
+ undo.disabled=true; undo.value='Sending…';
+ textBox.disabled =true;
+ 
+ 
+ var back = document.createElement("BUTTON");
+  var text = document.createTextNode("Back");
+  back.appendChild(text);
+  document.body.appendChild(back);
+  
+back.onclick = function() {
+   location.reload()
+}
+ 
+    }
+    
+ 
   //document.getElementById("undo").onclick() = location.reload()
   //document.getElementById("undo").addEventListener("click", function() {
   //document.getElementById(BUTTON_ID).removeAttribute('disabled');
@@ -47,6 +70,7 @@
 			
 			document.getElementById("codeSubmit").disabled = true;
             document.getElementById("code").disabled = true;
+            
 		}
         
 		if (code == "003"){
@@ -348,18 +372,20 @@
 
 	</optgroup>
 </select><br /> <br /> <input id = "codeSubmit" type="button" value="Enter" onClick = "return addTextBox();"></input>
-				  
+			</form>	  
 													
 </div>
-<div>
+<div class = "left">
 <p id = "paragraph">
-		   
+   
 </p></div>
-<div class = "inline">
+
+	<div class = "right">	   
+     <p>MARC code: <br/><br/></p>
 		     <p id = "output">
-		     MARC code: <br/>
-		     </p>
-		   </div>
+		     
+		     </p>    
+             </div>
 		   
 </body>
 </html>
