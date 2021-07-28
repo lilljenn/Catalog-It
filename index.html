@@ -5,7 +5,11 @@
 </head>
 	<script>
 	function addTextBox(){
-		document.getElementById("paragraph").innerHTML = "paragraph changed."
+		//document.getElementById("paragraph").innerHTML = "paragraph changed."
+		var textBox = document.createElement("INPUT");
+ textBox.setAttribute("type", "text");
+ 
+  document.body.appendChild(textBox);
 	}
 	</script>
 <body>
