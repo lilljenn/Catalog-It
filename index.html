@@ -7,6 +7,10 @@
 	function addTextBox(){
 		  var code = document.getElementById("code").value;
   document.getElementById("paragraph").innerHTML = "You selected: " + code + "<br/> <br/>";
+		//disable the button
+document.getElementById("codeSubmit").disabled = true;
+//reable the button
+//document.getElementById(BUTTON_ID).removeAttribute('disabled');
 		
 		if (code == "001"){
 			document.getElementById("paragraph").innerHTML = "You selected: " + code + "<br/> <br/>"; "Please enter the control number of the library item. <br/><br/>";
@@ -317,7 +321,7 @@
 		<option id = "887">887 Non-MARC Information Field</option> 
 
 	</optgroup>
-</select><br /> <br /> <input id = "codeSubmit" type="button" value="Enter" onClick = "return addTextBox(); this.disabled = true;"></input>
+</select><br /> <br /> <input id = "codeSubmit" type="button" value="Enter" onClick = "return addTextBox();></input>
 				  
 													
 </div>
