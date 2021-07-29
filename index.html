@@ -8,6 +8,20 @@
         top: 40%;
 		} 
         .left{padding-right: 50%;}
+		
+		       .topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  font-size: 20px;
+}
 	</style>
 	<title>Catalog It</title>
 </head>
@@ -109,8 +123,8 @@ textBox.style.top = '60%';
   
   button.style.position = 'absolute';
   button.style.left = '10%';
-  button.style.top = '70%';
-  button.style.padding = '10px';
+  button.style.top = '65%';
+  button.style.padding = '20px';
   button.appendChild(text);
   document.body.appendChild(button);
   
@@ -120,8 +134,8 @@ textBox.style.top = '60%';
   
   undo.style.position = 'absolute';
   undo.style.left = '30%';
-  undo.style.top = '70%';
-  undo.style.padding = '10px';
+  undo.style.top = '65%';
+  undo.style.padding = '20px';
   undo.appendChild(text);
   document.body.appendChild(undo);
   
@@ -166,6 +180,14 @@ document.getElementById("codeSubmit").removeAttribute('disabled');
 	}
 	</script>
 <body>
+	<div class = "topnav"> 
+<a class="active" href="#home">Home</a>
+  <a href="#news">Advanced</a>
+  <a href="#contact">Beginner</a>
+  <a href="#about">Feedback</a>
+  <a href= "#links">Links</a>
+  </div>
+	<div>
 	<div>
 <h1>MARC Code</h1>
 <p>Please select the MARC code for your bibliographic record.</p>
