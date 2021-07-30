@@ -23,12 +23,9 @@
 			height: 10%;
 			width: 10%;
 		}
-		.resizeImg {
-			 display: block;
-  margin-left: auto;
-  margin-right: auto;
-		}
-		.center {text-align: center;
+		
+        .left { float: left;}
+        .right {float: right;}
 	</style>
 	<title>Catalog It</title>
 	</head>
@@ -55,24 +52,28 @@
   <a href="/Catalog-It/Feedback">Feedback</a>
   <a href= "/Catalog-It/Links">Links</a>
   </div>
-      <div class = "center">
+  <div class = "center">
 	      <p id = "directions">Please chose the type of item you want to catalog. Print items refer to materials that are printed, such as books or magazines. Non-print items mainly refer to cds, dvds, audiobooks, and games.</p>
 	<br/>
-	      <input id = "print" name = "choice" type = "radio">print</input>
-	<br/>
-	</div>
-	<div>
-	<img class = "printImg resizeImg right" src= "ergita-sela-rjm78PEyYLc-unsplash.jpg"></img>
-	<p class = "center" id = "printPhoto">Photo by Ergita Sela on Unsplash</p>
-<br/><br/>
+    <p class = "left center">
+	      
+	<img class = "printImg"  alt = "book" src= "ergita-sela-rjm78PEyYLc-unsplash.jpg"></img>
+    <br/><br/>
+	Photo by Ergita Sela on Unsplash
+    <br/><br/>
+    <input id = "print" name = "choice" type = "radio"> print</input>
+</p>
+<p class = "right center">
+					     <img class = "nonPrintImg" alt = "dvd" src = "roberto-sorin-7qn9wis0Wns-unsplash.jpg"></img>
+                         <br/><br/>
+                         Photo by Roberto Sorin on Unsplash
+                         <br/><br/>
+                    <input id = "nonPrint" name = "choice" type = "radio">non-print</input>
+</p>
 
-	<input id = "nonPrint" name = "choice" type = "radio">non-print</input>
-<br/>
-
-					     <img class = "nonPrintImg resizeImg right" src = "roberto-sorin-7qn9wis0Wns-unsplash.jpg"></img>
-							  <p class = "center" id = "nonPrintPhoto">Photo by Roberto Sorin on Unsplash</p>
-<br/> <br/>
-<button id = "btnEnter">Enter</button>
-	</div>
-      </body>
+<p class = "center">
+  <button id = "btnEnter">Enter</button>
+  </p>
+</div>
+	      </body>
 </html>
