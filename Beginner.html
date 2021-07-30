@@ -32,6 +32,21 @@
 	</style>
 	<title>Catalog It</title>
 	</head>
+	<script>
+		const btn = document.querySelector('btnEnter');
+        // handle button click
+        btn.onclick = function () {
+            const rbs = document.querySelectorAll('input[name="choice"]');
+            let selectedValue;
+            for (const rb of rbs) {
+                if (rb.checked) {
+                    selectedValue = rb.value;
+                    break;
+                }
+            }
+            alert(selectedValue);
+        };
+	</script>
 <body>
 	<div class = "topnav"> 
 <a class="active" href="/Catalog-It">Home</a>
@@ -43,21 +58,21 @@
       <div class = "center">
 	      <p id = "directions">Please chose the type of item you want to catalog. Print items refer to materials that are printed, such as books or magazines. Non-print items mainly refer to cds, dvds, audiobooks, and games.</p>
 	<br/>
-	      <input id = "print" type = "radio">print</input>
+	      <input id = "print" name = "choice" type = "radio">print</input>
 	<br/>
 	</div>
 	<div>
 	<img class = "printImg resizeImg right" src= "ergita-sela-rjm78PEyYLc-unsplash.jpg"></img>
 	<p class = "center" id = "printPhoto">Photo by Ergita Sela on Unsplash</p>
-	</div>
 <br/><br/>
-	<div class = "center">
-	<input id = "nonPrint" type = "radio">non-print</input>
+
+	<input id = "nonPrint" name = "choice" type = "radio">non-print</input>
 <br/>
-</div>
-<div>
+
 					     <img class = "nonPrintImg resizeImg right" src = "roberto-sorin-7qn9wis0Wns-unsplash.jpg"></img>
 							  <p class = "center" id = "nonPrintPhoto">Photo by Roberto Sorin on Unsplash</p>
+<br/> <br/>
+<button id = "btnEnter">Enter</button>
 	</div>
       </body>
 </html>
