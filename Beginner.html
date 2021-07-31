@@ -38,12 +38,32 @@ bottom: 30%; left: 50%;
 	<title>Catalog It</title>
 	</head>
 	<script>
+    function changeText(){
+
 	if (document.getElementById("print").checked == true){
-	    document.getElementById("main").innerHTML = "text";
+	    document.getElementById("main").innerHTML = "<br/><br/>text";
 	    }
-	else if (document.getElementById("nonprint").checked == true){
-		 document.getElementById("main").innerHTML = "text paragraph";
+	else if (document.getElementById("nonPrint").checked == true){
+		 document.getElementById("main").innerHTML = "<br/> <br/> text paragraph <br/><br/>";
+         
+         	var textBox = document.createElement("INPUT");
+ textBox.setAttribute("type", "text");
+  document.body.appendChild(textBox) 
+  var button = document.createElement("BUTTON");
+  var text = document.createTextNode("Next");
+ 
+  textBox.style.position = 'absolute';
+  textBox.style.left = '30%';
+    button.style.position = 'absolute';
+  button.style.left = '37%';
+  button.style.top = '40%';
+  button.style.padding = '20px';
+  button.appendChild(text);
+  document.body.appendChild(button);
+  
 		 }
+        
+         }
 	</script>
 <body>
 	<div class = "topnav"> 
@@ -53,8 +73,8 @@ bottom: 30%; left: 50%;
   <a href="/Catalog-It/Feedback">Feedback</a>
   <a href= "/Catalog-It/Links">Links</a>
   </div>
-  <div class = "center">
-	      <p id = "directions">Please chose the type of item you want to catalog. Print items refer to materials that are printed, such as books or magazines. Non-print items mainly refer to cds, dvds, audiobooks, and games.</p>
+  <div  id = "main" class = "center">
+	      <p>Please chose the type of item you want to catalog. Print items refer to materials that are printed, such as books or magazines. Non-print items mainly refer to cds, dvds, audiobooks, and games.</p>
 	<br/>
     <p class = "left center">
 	      
@@ -73,8 +93,9 @@ bottom: 30%; left: 50%;
 </p>
 
 <p class = "center next">
-  <button id = "btnEnter">Enter</button>
+  <button id = "btnEnter" onclick = "changeText()">Enter</button>
   </p>
 </div>
+<div id = "paragraph"></div>
 	      </body>
 </html>
