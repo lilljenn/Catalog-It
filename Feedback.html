@@ -26,5 +26,25 @@
   <a href="/Catalog-It/Feedback">Feedback</a>
   <a href= "/Catalog-It/Links">Links</a>
   </div>
+	<h3>Feedback Form</h3>
+
+<div class="container">
+  <form action="/action_page.php">
+    <label for="fname">Please select the option that best fits. Please do not provide any personal information about you or your place of work.</label>
+    <br/><br/>
+    <select id="option" name="country">
+      <option value="student">Student</option>
+      <option value="librarian">Librarian</option>
+      <option value="cataloger">Cataloger</option>
+      <option value = "administrative">Administrative Librarian</option>
+      <option value = "other">Other</option>
+    </select>   
+<br/><br/>
+    <label for="subject">Feedback</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
       </body>
 </html>
