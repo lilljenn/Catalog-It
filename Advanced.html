@@ -177,7 +177,7 @@ document.getElementById("codeSubmit").removeAttribute('disabled');
 	}
 		      
             function download()
-	var file = new File(["Hello, world!"], {type: "text/plain;charset=utf-8"});
+	var file = new File(["Hello World"], {type: "text/plain;charset=utf-8"});
 
 saveAs(file, "MARCcode.txt");
 	</script>
@@ -479,7 +479,7 @@ saveAs(file, "MARCcode.txt");
 	<div class = "right">
 		<form>
 			<p>To download, please click on the button below.</p>
-			<a><button>Download</button></a>
+			<a><button id = "download()">Download</button></a>
      <p>MARC code: <br/><br/></p>
 		     <p id = "output">
 		     
