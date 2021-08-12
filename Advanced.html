@@ -175,16 +175,11 @@ document.getElementById("codeSubmit").removeAttribute('disabled');
 			document.getElementById("codeSubmit").disabled = true;
             document.getElementById("code").disabled = true;
 	}
-		
-function download(){
-	document.getElementById("output") = output;
-		output,{type: "text/plain;charset=utf-8"});
+		      
+            function download()
+	var file = new File(["Hello, world!"], {type: "text/plain;charset=utf-8"});
 
-saveAs(output, "MARCcode.txt");
-}
-            
-            
-	
+saveAs(file, "MARCcode.txt");
 	</script>
 <body>
 	<div class = "topnav"> 
@@ -484,7 +479,7 @@ saveAs(output, "MARCcode.txt");
 	<div class = "right">
 		<form>
 			<p>To download, please click on the button below.</p>
-			<button id= "download" type = "submit" onclick = "download()">Download</button>
+			<a><button>Download</button></a>
      <p>MARC code: <br/><br/></p>
 		     <p id = "output">
 		     
